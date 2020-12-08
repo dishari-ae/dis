@@ -10,6 +10,22 @@ html{
 body {
 	text-align: center;
 }
+::-webkit-scrollbar {
+    width: 1rem;
+  }
+::-webkit-scrollbar-track {
+    background: rgb(180, 180, 180);
+  }
+::-webkit-scrollbar-thumb {
+    background: repeating-linear-gradient(rgb(240, 253, 124),rgb(109, 155, 241));
+    border-radius: 20px;
+  }
+::-webkit-scrollbar-thumb:hover {
+    background:  repeating-linear-gradient(rgb(220, 238, 62),rgb(46, 95, 185));
+  }
+::-webkit-scrollbar-thumb:active {
+    background:  repeating-linear-gradient(rgb(220, 238, 62),rgb(46, 95, 185));
+  }
 
 .wrapper {
 	width: 1170px;
@@ -26,7 +42,7 @@ header {
 .logo {
 	width: 30%;
     float: left;
-    margin: 1px auto 7px;
+    margin: 3.5px auto 7px;
 	line-height: 100px;
 }
 
@@ -59,7 +75,8 @@ nav a {
 	background-image: url(https://images.pexels.com/photos/730751/pexels-photo-730751.jpeg);
 	-webkit-background-size: cover;
 	background-size: cover;
-	background-position: center center;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 .banner-area h2 {
@@ -143,6 +160,7 @@ nav a {
 	background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .neon {
